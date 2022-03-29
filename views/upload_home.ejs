@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing Tool Kit</title>
+    <link rel="icon" href="icon/icon.ico">
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Link JQuery -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/upload_home.js"></script>
+    <link rel="stylesheet" href="css/upload_home.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="/" class="navbar-brand">
+            <img src="icon/icon.png" width=50 height=50 alt="">
+        </a>
+        <a href="/" class="navbar-brand">
+            <h2><i><b><u>CMYKit</u></b></i></h2>
+        </a>
+    </nav>
+    <form class="form-group">
+        <!--Description-->
+        <div style="color: purple;">
+            <h3>Upload an Image from Your Computer</h3>
+            <h3>(or Drag and Drop)</h3>
+        </div>
+        <br>
+        <!--Input to upload images-->
+        <div class="input-group">
+            <div class="custom-file">
+                <input type="file" name="photo" class="custom-file-input" id="inputFile" accept=".png, .jpg, .jpeg, .gif" required onchange="return previewImage(this);">
+                <label class="custom-file-label" for="inputFile" id="inputFileLabel">Choose image file to process</label>
+                <div class="invalid-feedback">Please choose a valid image file before proceeding</div>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" style="height:38px; width:100px" type="button" id="uploadBtn">Upload</button>
+            </div>
+        </div>
+        <div>
+            <img id="output_image" src="">
+        </div>
+        
+    </form>
+
+    <!-- Link script -->
+    <script type="text/javascript" src="js/home_processor.js"></script>
+
+</body>
+
+</html>

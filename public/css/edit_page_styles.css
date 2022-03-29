@@ -1,0 +1,112 @@
+.navbar {
+    border-bottom: 3px solid #000;
+    background-color: rgba(197, 141, 243, 0.5);
+}
+
+#image_container_div {
+    margin-top: 1%;
+    text-align: center;
+}
+
+#sample_image {
+    width: 45%;
+    height: 35%;
+    border: black 1px solid;
+    padding: 1%;
+}
+
+.text-center {
+    margin-top: 2%;
+}
+
+.btn-lg {
+    width: 200px;
+    margin: 0px 1%;
+}
+
+#controls_container_div {
+    margin: 2% 1% 2% 4%;
+    width: 96%;
+}
+
+.btn-md {
+    width: 50%;
+    height: 40px;
+}
+
+.btn-group-vertical {
+    margin-right: 2%;
+}
+
+#size_edit_tools {
+    border: black 3px solid;
+}
+
+.col-sm {
+    max-width: 100%;
+    text-align: center;
+}
+
+#to_text {
+    margin-top: 20%;
+}
+
+#image_size_text {
+    background-color: rgb(228, 228, 228);
+    margin-top: 3%;
+}
+
+.tool_header {
+    text-align: center;
+}
+
+.size_input_fields {
+    width: 90%;
+    margin-top: 3%;
+}
+
+#apply_button {
+    margin: 0px 3%;
+}
+
+.btn-sm {
+    margin: 1% 1%;
+}
+
+.slider_input_box {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.row {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding: 30px;
+    text-align: center;
+}
+
+.row-sm {
+    text-align: center;
+}
+
+#factor_text {
+    text-align: center;
+}
+
+body,
+html {
+    min-height: 100%;
+}
+
+.bg {
+    background-image: url("Assets/Images/Background.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

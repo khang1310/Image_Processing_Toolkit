@@ -1,0 +1,40 @@
+<div id="mid_tool_column" class="row">
+    <div class="column">
+        <div>Add Noise</div>
+        <input id="noise_slider" type="range" min="0" max="100" value="0" name="noise_slider" oninput="noise_amount.value=noise_slider.value">
+        <br>
+        <input id="noise_amount" class="slider_input_box" type="number" value="0" min="0" max="200" oninput="noise_slider.value=noise_amount.value" />
+    </div>
+
+    <div class="column">
+        <div>Denoise</div>
+        <input id="denoise_slider" type="range" min="0" max="100" value="0" name="denoise_slider" oninput="denoise_amount.value=denoise_slider.value">
+        <br>
+        <input id="denoise_amount" class="slider_input_box" type="number" value="0" min="0" max="200" oninput="denoise_slider.value=denoise_amount.value" />
+    </div>
+</div>
+
+<div id="mid_tool_column" class="row">
+    <br>
+    <div id="mid_tool_row" class="col-sm">
+        <p id="denoise_level_text"><b>OR CHOOSE NOISE REDUCTION LEVEL</b></p>
+    </div>
+</div>
+<div id="mid_tool_column" class="row">
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="denoiseFactors" id="noiseNone" value="none">
+        <label class="form-check-label" for="noiseNone">None</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="denoiseFactors" id="noiseLow" value="low">
+        <label class="form-check-label" for="noiseLow">Low</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="denoiseFactors" id="noiseMed" value="med">
+        <label class="form-check-label" for="noiseMed">Medium</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="denoiseFactors" id="noiseHigh" value="high">
+        <label class="form-check-label" for="noiseHigh">High</label>
+    </div>
+</div>

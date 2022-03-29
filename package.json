@@ -1,0 +1,46 @@
+{
+    "name": "cs-372-project-fall-2020",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node server.js",
+        "test": "mocha ./tests --require @babel/polyfill --require @babel/register --recursive --timeout 15000 --exit"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://nguyhp02@dev.azure.com/nguyhp02/CS-372-Project-Fall-2020/_git/CS-372-Project-Fall-2020"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/polyfill": "7.12.1",
+        "body-parser": "1.19.0",
+        "dotenv": "8.2.0",
+        "ejs": "2.5.5",
+        "express": "4.17.1",
+        "formidable": "1.2.2",
+        "gm": "1.23.1",
+        "image-size": "0.9.3",
+        "imagej": "1.0.0",
+        "mocha": "8.2.1",
+        "mongoose": "5.10.16",
+        "path": "0.12.7",
+        "supertest": "6.0.1",
+        "waifu2x": "0.1.5"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.12.8",
+        "@babel/core": "7.12.9",
+        "@babel/node": "7.12.6",
+        "@babel/plugin-transform-runtime": "7.12.1",
+        "@babel/preset-env": "7.12.7",
+        "@babel/register": "7.12.1",
+        "@babel/runtime": "7.12.5",
+        "nodemon": "2.0.6"
+    },
+    "directories": {
+        "test": "tests"
+    },
+    "description": ""
+}

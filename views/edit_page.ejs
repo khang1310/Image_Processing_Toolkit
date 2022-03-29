@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing Tool Kit</title>
+    <link rel="icon" href="icon/icon.ico">
+    <!-- Link JQuery -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/FileSaver.min.js"></script>
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Link stylesheet-->
+    <link rel="stylesheet" href="css/edit_page_styles.css">
+    <!-- Link script -->
+    <script type="text/javascript" src="js/edit_page_processor.js"></script>
+    <script type="text/javascript" src="js/upload_home.js"></script>
+</head>
+
+<body onload="return loadImage();">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="/" class="navbar-brand">
+            <img src="icon/icon.png" width=50 height=50 alt="">
+        </a>
+        <a href="/" class="navbar-brand">
+            <h2><i><b><u>CMYKit</u></b></i></h2>
+        </a>
+    </nav>
+    <div id="image_container_div" class="container h-100">
+        <div>
+            <h5>Your Image</h5>
+            <img id="uploadedImage" src="" alt="Your Image">
+        </div>
+    </div>
+
+    <div class="text-center" class="container h-100">
+        <div id="apply_save_container" class="btn-group ">
+            <button id="saveImage" class="btn-success btn-lg">Save Image</button>
+        </div>
+    </div>
+
+    <div id="controls_container_div" class="container-fluid">
+        <div class="row">
+            <div class="btn-group-vertical col-3">
+                <button id="size_button" class="btn-secondary btn-md">Size</button>
+                <button id="blur_button" class="btn-secondary btn-md">Blur</button>
+                <button id="noise_button" class="btn-secondary btn-md">Noise</button>
+                <button id="filter_button" class="btn-secondary btn-md">Filters</button>
+            </div>
+
+            <div id="size_edit_tools" class="col-5">
+                <h5 id="tool_header" class="tool_header">Scale Image</h5>
+                <div id="tools_row" class="row">
+                    <div id="left_tool_column" class="col-sm">
+                        <h5>Image Size</h5>
+                        <p id="image_size_text"><i>1x1</i></p>
+                    </div>
+                    <div id="mid_tool_column" class="col-sm">
+                        <p id="to_text"><b>TO</b></p>
+                    </div>
+                    <div id="right_tool_column" class="col-sm">
+                        <input type="number" class="size_input_fields" name="image_width" id="image_width" placeholder="Width">
+                        <input type="number" class="size_input_fields" name="image_height" id="image_height" placeholder="Height">
+                    </div>
+                </div>
+                <div id="factor_text_row" class="row">
+                    <p id="factor_text"><b>OR SCALE TO FACTOR</b></p>
+                    <div id="factor_tools_row" class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="scaleFactors" id="scale1.5" value="1.5">
+                            <label class="form-check-label" for="scale1.5">1.5x</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="scaleFactors" id="scale2.0" value="2.0">
+                            <label class="form-check-label" for="scale2.0">2.0x</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="scaleFactors" id="scale3.0" value="3.0">
+                            <label class="form-check-label" for="scale3.0">3.0x</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="scaleFactors" id="scale4.0" value="4.0">
+                            <label class="form-check-label" for="scale4.0">4.0x</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button id="preview_button" class="btn-secondary btn-sm" onclick="return preview();">Preview</button>
+                </div>
+                <div class="text-center">
+                    <button id="apply_button" class="btn-secondary btn-sm" onclick="return imageProcess();">Apply to Image</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Link script -->
+    <script type="text/javascript" src="js/edit_page_frontend.js"></script>
+</body>
+
+</html>
